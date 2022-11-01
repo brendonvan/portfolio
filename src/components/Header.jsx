@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className={ scrollDirection ? 'header' : 'header hide-nav' }>
-                <div className='header-left'><img src="./icons/BVFilm-source.svg" alt="logo" /></div>
+                <div className='header-left'><img src="http://brendonvan.github.io/portfolio/icons/BVFilm-source.svg" alt="logo" /></div>
                 
                 <div className='header-right'>
                     <a href='#home'>Home</a>
