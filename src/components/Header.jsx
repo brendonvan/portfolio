@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 const Header = () => {
 
-    const [scrollDirection, setScrollDirection] = useState(null);
+    const [scrollDirection, setScrollDirection] = useState(true);
       
         useEffect(() => {
           let lastScrollY = window.pageYOffset;
