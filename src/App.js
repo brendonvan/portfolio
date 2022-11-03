@@ -37,7 +37,7 @@ function App() {
           </h1>
           <div className='scroll-down'><span>scroll down ---{'>'}</span></div>
           <div className='contact-info'>
-            <a href='#projects'>VIEW PROJECTS</a>
+            <a href='#work'>VIEW PROJECTS</a>
             <div className='contact-info-landing'>
               <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
               <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
