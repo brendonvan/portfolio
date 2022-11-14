@@ -335,10 +335,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (max-width: 1200px) {
-  .about-me h1 {
-    font-size: 1em;
-    margin-top: 2em;
-  }
   .about-me-desc {
     font-size: 0.7em;
   }
@@ -346,6 +342,13 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100vw;
     height: auto;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me h1 {
+    font-size: 1em;
+    margin-top: 2em;
   }
 }
 
@@ -385,33 +388,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .projects {
-  width: 80%;
+  width: 60%;
 }
 
 .project-header h1 {
-  width: 30%;
+  width: 100%;
   font-size: 8rem;
   line-height: 8rem;
   letter-spacing: -0.2rem;
   margin-bottom: 4rem;
-  text-align: left;
+  text-align: center;
 }
 
 .project-header {
   display: flex;
-  
-}
-
-.project-header-left {
-  width: 50%;
-  text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
-.project-header-left h1 {
-  width: auto;
-  text-align: center;
-}
 
 .project-header-right {
   width: 50%;
@@ -445,7 +439,6 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-
 .stacked {
   display: grid;
 }
@@ -478,7 +471,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .project-card-content img {
-  width: 5.5rem;
+  width: 6.5rem;
   height: 1.5rem;
   border-radius: 0;
   margin-top: 1rem;
@@ -503,6 +496,12 @@ h1, h2, h3, h4, h5, h6, p {
     grid-row: span 1;
     grid-column: span 1;
   }
+  .project-card {
+    width: 60vw;
+    aspect-ratio: 1 / 100%;
+    border-radius: 0.5rem;
+    height: 25rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -510,23 +509,15 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-flow: column wrap; 
     height: auto;
+    
   }
-  .project-header-left {
-    width: 100%;
-  }
-  .project-header-left h1 {
+  .project-header h1 {
     font-size: 4em;
     margin: 0;
     width: auto;
   }
-  .project-header-right {
-    width: 100%;
-  }
-  .project-card {
-    width: 80vw;
-    aspect-ratio: 1 / .75;
-    border-radius: 0.5rem;
-  }
+  
+  
   .project-portfolio {
     row-gap: 2rem;
   }

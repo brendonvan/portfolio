@@ -49,7 +49,7 @@ function App() {
         </div>
         <div id='expertise'></div>
         <div className='about-me'>
-          <h1>My Expertise</h1>
+          <h1>About Me</h1>
           <div className='about-me-desc'>
             <span>I'm used to </span> 
               <span>tight </span>
@@ -74,14 +74,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='projects' id='work'>
+        <div className='projects' id='projects'>
           <div className='project-header'>
-            <div className='project-header-left'>
-              <h1>My Work</h1>
-            </div>
-            <div className='project-header-right'>
-              <h1></h1>
-            </div>
+            <h1>My Work</h1>
           </div>
           <div className='project-portfolio'>
             <div className='project-card featured stacked'>

@@ -30,20 +30,12 @@ const Header = () => {
                 
                 <div className='header-right'>
                     <a href='#home'>Home</a>
-                    <a href='#expertise'>Expertise</a>
-                    <a href='#work'>Work</a>
+                    <a href='#expertise'>About Me</a>
+                    <a href='#projects'>Projects</a>
                     <a href='#contact'>Contact</a>
-                    <a href="./Brendon-Van-Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</a>
+                    <a href="./Brendon_Van_Resume.docx" download rel="noopener noreferrer" target="_blank">Resume</a>
                 </div>
 
-
-                {/* <div className={ menuOpen ? 'header-right open' : 'header-right' }>
-                    <div className='header-menu' onClick={ () => { toggleMenu() } }>
-                        <span className='line-1'></span>
-                        <span className='line-2'></span>
-                        <span className='line-3'></span>
-                    </div>
-                </div> */}
             </div>
         </div>
     )
