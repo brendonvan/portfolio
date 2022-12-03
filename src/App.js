@@ -132,7 +132,7 @@ function App() {
               </div>
             </div>
             <div className='project-card stacked'>
-              <a href='https://pokedex-ga-project.herokuapp.com/pokedex/' target="_blank" rel="noopener noreferrer"><img src="./projects/pokedex.png" alt="pokedex-project" /></a>
+              <a href='https://pokedex-demo.onrender.com/pokedex' target="_blank" rel="noopener noreferrer"><img src="./projects/pokedex.png" alt="pokedex-project" /></a>
               <div className='project-card-content'>
                 <h2>Pokedex</h2>
                 <span><p>Virtual Pokedex that encompasses the original 151 pokemon.</p></span><a href='https://github.com/brendonvan/pokedex/' target="_blank" rel="noopener noreferrer"><p id='contact'>Github</p></a>
