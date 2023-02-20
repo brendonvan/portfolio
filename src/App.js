@@ -80,7 +80,7 @@ function App() {
           </div>
           <div className='project-portfolio'>
             <div className='project-card featured stacked'>
-              <a href='https://tesla-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/tesla.png" alt="tesla-project" /></a>
+              <a href='https://tesla-reimagined.vercel.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/tesla.png" alt="tesla-project" /></a>
               <div className='project-card-content'>
                 <h2>Tesla Reimagined</h2>
                 <span><p>Tesla Clone but with UI/UX inspired by Nickelfox & Kushanthi Hasinika. CRUD funcationality for user authentication and cultivating car designs using Spring Boot.</p></span><a href='https://github.com/brendonvan/Tesla-Reimagined/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
