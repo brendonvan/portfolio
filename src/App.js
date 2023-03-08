@@ -109,7 +109,7 @@ function App() {
               </div>
             </div>
             <div className='project-card stacked'>
-              <a href='https://this-is-streamify.onrender.com/' target="_blank" rel="noopener noreferrer"><img src="./projects/spotify.png" alt="spotify-project" /></a>
+              <a href='https://streamify.fly.dev/' target="_blank" rel="noopener noreferrer"><img src="./projects/spotify.png" alt="spotify-project" /></a>
               <div className='project-card-content'>
                 <h2>Spotify Clone</h2>
                 <span><p>Recreated Spotify's search funcationality, utilizing CRUD for the playlists.</p></span><a href='https://github.com/brendonvan/This-Is-Streamify/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
