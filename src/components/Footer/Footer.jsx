@@ -1,6 +1,5 @@
 import './Footer.css';
 import Contact from '../Contact/Contact';
-import { useState } from 'react';
 
 const Footer = () => {
 

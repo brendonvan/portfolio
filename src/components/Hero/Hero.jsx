@@ -15,7 +15,7 @@ const Hero = () => {
             </div>
           </h1>
           <div className='hero__banner'>
-            <a className='project__CTA' href='#projects'>VIEW PROJECTS</a>
+            <a className='hero__cta' href='#projects'>VIEW PROJECTS</a>
             <Contact/>
           </div>
         </section>

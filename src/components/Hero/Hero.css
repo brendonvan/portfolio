@@ -1,14 +1,53 @@
 /* Hero Section */
 
 #hero {
-    width: 80%;
-    height: 50em;
+    width: 100vw;
+    height: 100vh;
     font-family: "Mark Pro Bold", sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
+}
+
+.hero__title {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0rem;
+}
+
+.hero__name {
+    font-size: 2em;
+    background: 
+        linear-gradient(-45deg,
+        var(--theme-light-pink),
+        var(--theme-dark-pink),
+        var(--theme-light-purple),
+        var(--theme-secondary-light-purple),
+        var(--theme-dark-purple),
+        var(--theme-secondary-dark-purple),
+        var(--theme-dark-blue),
+        var(--theme-secondary-dark-blue),
+        var(--theme-light-blue),
+        var(--theme-secondary-light-blue),
+        var(--theme-light-blue),
+        var(--theme-secondary-dark-blue),
+        var(--theme-dark-blue),
+        var(--theme-secondary-dark-purple),
+        var(--theme-dark-purple),
+        var(--theme-secondary-light-purple),
+        var(--theme-light-purple),
+        var(--theme-dark-pink),
+        var(--theme-light-pink));
+    background-size: 2000%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 7s linear infinite;
+}
+
+.hero__greeting {
+    font-size: 2em;
 }
 
 .hero__slider {
@@ -22,6 +61,7 @@
 .hero__slider div {
     height: 5.5rem;
     margin-bottom: 6rem;
+    font-size: 1.5rem;
     color: #fff;
     text-align: center;
 }
@@ -30,92 +70,7 @@
     animation: slide 5s linear infinite;
 }
 
-.hero__greeting {
-    font-size: 2em;
-}
-
-.hero__name {
-    font-size: 2em;
-    background: linear-gradient(-45deg,
-            var(--theme-light-pink),
-            var(--theme-dark-pink),
-            var(--theme-light-purple),
-            var(--theme-secondary-light-purple),
-            var(--theme-dark-purple),
-            var(--theme-secondary-dark-purple),
-            var(--theme-dark-blue),
-            var(--theme-secondary-dark-blue),
-            var(--theme-light-blue),
-            var(--theme-secondary-light-blue),
-            var(--theme-light-blue),
-            var(--theme-secondary-dark-blue),
-            var(--theme-dark-blue),
-            var(--theme-secondary-dark-purple),
-            var(--theme-dark-purple),
-            var(--theme-secondary-light-purple),
-            var(--theme-light-purple),
-            var(--theme-dark-pink),
-            var(--theme-light-pink));
-    background-size: 2000%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: animate 7s linear infinite;
-}
-
-#header-deadlines {
-    background: linear-gradient(-45deg,
-            var(--theme-dark-red),
-            var(--theme-dark-red),
-            var(--theme-dark-red),
-            var(--theme-secondary-dark-red),
-            var(--theme-light-red),
-            var(--theme-secondary-light-red),
-            var(--theme-light-red),
-            var(--theme-secondary-dark-red),
-            var(--theme-dark-red),
-            var(--theme-dark-red),
-            var(--theme-dark-red));
-    background-size: 2000%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: animate 5s linear infinite;
-}
-
-#header-challenging {
-    background: linear-gradient(-45deg,
-            var(--theme-light-pink),
-            var(--theme-dark-pink),
-            var(--theme-light-purple),
-            var(--theme-secondary-light-purple),
-            var(--theme-dark-purple),
-            var(--theme-secondary-dark-purple),
-            var(--theme-dark-blue),
-            var(--theme-secondary-dark-blue),
-            var(--theme-light-blue),
-            var(--theme-secondary-light-blue),
-            var(--theme-light-blue),
-            var(--theme-secondary-dark-blue),
-            var(--theme-dark-blue),
-            var(--theme-secondary-dark-purple),
-            var(--theme-dark-purple),
-            var(--theme-secondary-light-purple),
-            var(--theme-light-purple),
-            var(--theme-dark-pink),
-            var(--theme-light-pink));
-    background-size: 2000%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: animate 7s linear infinite;
-}
-
-.hero__title {
-    font-size: 4rem;
-    line-height: 5.5rem;
-    letter-spacing: -0.3rem;
-    margin-bottom: 2rem;
-}
-
-.project__CTA {
+.hero__cta {
     color: var(--theme-dark-white);
     letter-spacing: 0.3rem;
     text-decoration: none;
@@ -161,31 +116,5 @@
     }
 }
 
-@media (max-width: 480px) {
-    #hero {
-        height: 30em;
-    }
-
-    .hero__title {
-        margin-bottom: 0rem;
-
-        line-height: 4rem;
-    }
-
-    .hero__greeting {
-        font-size: 1em;
-    }
-
-    .hero__name {
-        font-size: 1em;
-    }
-
-    .hero__slider {
-        margin-top: 5rem;
-        font-size: 0.5em;
-        letter-spacing: 0.1rem;
-        line-height: 2.2rem;
-    }
-}
 
 /* Hero Section */
