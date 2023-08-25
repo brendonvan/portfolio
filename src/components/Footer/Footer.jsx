@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <footer id='contact'>
             <div className='contact__me'>
-                <h4>Contact Me</h4>
-                <p>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
+                <h4 className='contact__me-title'>Contact Me</h4>
+                <p className='contact__me-subtitle'>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
                 <Contact/>
             </div>
             <div className='testimonials'>

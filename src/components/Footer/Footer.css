@@ -3,28 +3,38 @@ footer {
     height: 100%;
     background-color: var(--theme-secondary-black-translucent);
     display: flex;
+    flex-flow: column wrap;
 }
 
-footer .contact__me {
-    width: 50%;
-    padding: 4rem;
+.contact__me {
+    width: 100%;
+    padding: 2rem;
 }
 
-footer .contact__me p {
+.contact__me-title {
+    font-size: 3rem;
+}
+
+.contact__me-subtitle {
     font-size: 1.3rem;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: -2rem;
-    
 }
 
-footer .contact__info {
+.contact__info {
+    margin-top: 5rem;
     display: flex;
     justify-content: flex-end;
 }
 
-footer .testimonials {
-    width: 50%;
+footer .contact__me .contact .show-email {
+    margin-top: 0.85rem;
+    margin-left: -6rem;
+}
+
+.testimonials {
+    width: 100%;
     background-color: var(--theme-secondary-dark-blue);
     padding: 2rem;
 }
@@ -50,6 +60,7 @@ footer .testimonials {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .testimonials span {
@@ -57,22 +68,4 @@ footer .testimonials {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-}
-
-@media (max-width: 480px) {
-    footer {
-        flex-flow: column wrap;
-    }
-    footer .contact__me {
-        width: 100%;
-        padding: 2rem;
-    }
-    footer .contact__me .contact__info {
-        margin-top: 5rem;
-    }
-    footer .testimonials {
-        width: 100%;
-        background-color: var(--theme-secondary-dark-blue);
-        padding: 2rem;
-    }
 }

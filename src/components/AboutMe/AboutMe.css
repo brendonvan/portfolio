@@ -1,5 +1,5 @@
 #about-me {
-  margin: 8rem 0;
+  padding: 4rem 0;
   font-family: 'Mark Pro Bold', sans-serif;
   font-size: 3rem;
   color: var(--theme-secondary-light-white);
@@ -20,6 +20,7 @@
 .about-me__desc {
   width: 80%;
   margin-bottom: 4rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -71,11 +72,9 @@
 
 
 .about-me__boxes {
-  width: 70rem;
-  height: 20rem;
   margin-bottom: 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-flow: column;
 }
 
 .about-me__box1,
@@ -111,23 +110,4 @@
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-}
-
-@media (max-width: 1200px) {
-  .about-me__desc {
-    font-size: 0.7em;
-  }
-
-  .about-me__boxes {
-    width: 100vw;
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-me h2 {
-    margin-top: 2em;
-    font-size: 1em;
-  }
 }
