@@ -14,7 +14,7 @@ const Footer = () => {
         }
     }
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className='contact-me'>
                 <h1>Contact Me</h1>
                 <p>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <span>Lead Instructor at General Assembly</span>
 
             </div>
-        </div>
+        </footer>
     )
 }
 

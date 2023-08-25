@@ -24,20 +24,20 @@ const Header = () => {
     }, [scrollDirection]);
 
     return (
-        <div className='header-container'>
+        <header className='header-container'>
             <div className={ scrollDirection ? 'header' : 'header hide-nav' }>
                 <div className='header-left'><img src="http://brendonvan.github.io/portfolio/icons/BVFilm-source.svg" alt="logo" /></div>
                 
                 <div className='header-right'>
                     <a href='#home'>Home</a>
-                    <a href='#expertise'>About Me</a>
+                    <a href='#about-me'>About Me</a>
                     <a href='#projects'>Projects</a>
                     <a href='#contact'>Contact</a>
                     <a href="./Brendon_Van_Resume.docx" download rel="noopener noreferrer" target="_blank">Resume</a>
                 </div>
 
             </div>
-        </div>
+        </header>
     )
 }
 

@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p {
   flex-flow: column;
 }
 
-.header-wrapper {
+.hero {
   font-family: Mark Pro Bold, sans-serif;
   width: 80%;
   height: 50em;
@@ -140,24 +140,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-.header-wrapper h1 {
+.hero h1 {
   font-size: 4rem;
   line-height: 5.5rem;
   letter-spacing: -0.3rem;
   margin-bottom: 2rem;
 }
 
-.header-wrapper a {
+.hero a {
   color: var(--theme-dark-white);
   letter-spacing: 0.3rem;
   text-decoration: none;
 }
 
 @media (max-width: 480px) {
-  .header-wrapper {
+  .hero {
     height: 30em;
   }
-  .header-wrapper h1 {
+  .hero h1 {
     margin-bottom: 0rem;
 
   line-height: 4rem;
@@ -303,6 +303,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Mark Pro Bold, sans-serif;
   width: 80%;
   height: auto;
+  padding-top: 5rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
   font-size: 3rem;
