@@ -13,31 +13,31 @@ const Footer = () => {
     }
 
     return (
-        <footer id='contact' className="footer">
-            <div className='contact-me'>
-                <h1>Contact Me</h1>
+        <footer id='contact'>
+            <div className='contact__me'>
+                <h4>Contact Me</h4>
                 <p>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
-                <div className='contact-info'>
+                <div className='contact__info'>
                     <div>
-                        <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
-                        <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
-                        <span className={ showEmail ? 'contact-points email moved' : 'contact-points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
+                        <span className={ showEmail ? 'contact__points moved' : 'contact__points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
+                        <span className={ showEmail ? 'contact__points moved' : 'contact__points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
+                        <span className={ showEmail ? 'contact__points email moved' : 'contact__points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
                         <h4><span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span></h4>
                     </div>
                 </div>
             </div>
             <div className='testimonials'>
-                <div className='testimonial-image'>
+                <div className='testimonial__image'>
                     <img src="./icons/quotes.svg" alt="quotes" />
                     <img src="./icons/ericfithian.jpeg" alt="ericfithian" />
                 </div>
-                <p>His ability to be a leader who helps others he's around will also improve
+                <p className='testimonial__quote'>His ability to be a leader who helps others he's around will also improve
                 the culture of any company that is lucky enough to hire him the same way it
                 has drastically improved the culture of my cohort he is taking. 
                 </p>
-                <span><b>- Eric Fithian</b></span>
-                <br></br>
-                <span>Lead Instructor at General Assembly</span>
+                <p className='testimonial__author'>
+                    <b>- Eric Fithian</b> Lead Instructor at General Assembly
+                </p>
 
             </div>
         </footer>

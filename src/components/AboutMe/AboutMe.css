@@ -16,7 +16,7 @@
     flex-flow: column;
   }
   
-  .about-me h1 {
+  .about-me h2 {
     font-size: 5.5rem;
     line-height: 5.5rem;
     letter-spacing: -0.2rem;
@@ -49,7 +49,7 @@
   }
   
   @media (max-width: 600px) {
-    .about-me h1 {
+    .about-me h2 {
       font-size: 1em;
       margin-top: 2em;
     }
@@ -65,20 +65,20 @@
   }
   
   
-  .about-me-box1 h6, .about-me-box2 h6, .about-me-box3 h6 {
+  .about-me-box1 h4, .about-me-box2 h4, .about-me-box3 h4 {
     margin-top: 2rem;
   
   }
   
-  .about-me-box1 h6 span:first-child {
+  .about-me-box1 h4 span:first-child {
     background: linear-gradient(to top, rgb(223, 4, 141) 30%, transparent 30%);
   }
   
-  .about-me-box2 h6 span:first-child {
+  .about-me-box2 h4 span:first-child {
     background: linear-gradient(to top, rgb(45, 73, 216) 30%, transparent 30%);
   }
   
-  .about-me-box3 h6 span:first-child {
+  .about-me-box3 h4 span:first-child {
     background: linear-gradient(to top, rgb(255, 106, 43) 30%, transparent 30%);
   }
   

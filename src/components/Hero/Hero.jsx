@@ -1,5 +1,5 @@
 import './Hero.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Hero = () => {
     let [showEmail, setShowEmail] = useState(false);
@@ -13,27 +13,23 @@ const Hero = () => {
     }
 
     return (
-        <section id='hero' className='hero'>
-          <h1>
-            <span id='greeting'>Hello, I'm </span>
-            <span id='name'>Brendon Van</span>
-            <br></br>
-            <div className='slider'>
-              <div className='slider-text1'>APP DEVELOPER</div>
-              <div className='slider-text2'>FRONT-END DEVELOPER</div>
-              <div className='slider-text3'>SOFTWARE ENGINEER</div>
+        <section id='hero'>
+          <h1 className='hero__title'>
+            <span className='hero__greeting'>Hello, I'm </span>
+            <span className='hero__name'>Brendon Van</span>
+            <div className='hero__slider'>
+              <div className='hero__slider-text1'>APP DEVELOPER</div>
+              <div className='hero__slider-text2'>FRONT-END DEVELOPER</div>
+              <div className='hero__slider-text3'>SOFTWARE ENGINEER</div>
             </div>
-            <br></br>
-            <br></br>
           </h1>
-          <div className='scroll-down'><span>scroll down ---{'>'}</span></div>
-          <div className='contact-info'>
-            <a href='#projects'>VIEW PROJECTS</a>
-            <div className='contact-info-landing'>
-              <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
-              <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
-              <span className={ showEmail ? 'contact-points email moved' : 'contact-points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
-              <h4><span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span></h4>
+          <div className='contact'>
+            <a className='contact__CTA' href='#projects'>VIEW PROJECTS</a>
+            <div className='contact__info'>
+              <span className={ showEmail ? 'contact__points moved' : 'contact__points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
+              <span className={ showEmail ? 'contact__points moved' : 'contact__points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
+              <span className={ showEmail ? 'contact__points email moved' : 'contact__points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
+              <p><span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span></p>
             </div>
           </div>
           <div className={ showEmail ? 'show-hint' : 'hide-hint' }>---{'>'} Email copied to clipboard! {'<'}---</div>

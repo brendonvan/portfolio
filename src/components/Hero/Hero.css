@@ -1,7 +1,7 @@
 
 /* Hero Section */
 
-.hero {
+#hero {
     font-family: Mark Pro Bold, sans-serif;
     width: 80%;
     height: 50em;
@@ -13,7 +13,7 @@
     text-align: center;
   }
   
-  .slider {
+  .hero__slider {
     position: relative;
     width: 100%;
     height: 6rem;
@@ -21,14 +21,14 @@
     overflow: hidden;
   }
   
-  .slider div {
+  .hero__slider div {
     height: 5.5rem;
     color: #fff;
     margin-bottom: 6rem;
     text-align: center;
   }
   
-  .slider-text1 {
+  .hero__slider-text1 {
     animation: slide 5s linear infinite;
   }
   
@@ -42,11 +42,11 @@
     100% {margin-top: 0.25rem;}
   }
   
-  #greeting {
+  .hero__greeting {
     font-size: 2em;
   }
   
-  #name {
+  .hero__name {
     font-size: 2em;
     background: linear-gradient(-45deg, var(--theme-light-pink), var(--theme-dark-pink), var(--theme-light-purple), var(--theme-secondary-light-purple), var(--theme-dark-purple), var(--theme-secondary-dark-purple), var(--theme-dark-blue), var(--theme-secondary-dark-blue), var(--theme-light-blue), var(--theme-secondary-light-blue), var(--theme-light-blue), var(--theme-secondary-dark-blue), var(--theme-dark-blue), var(--theme-secondary-dark-purple), var(--theme-dark-purple), var(--theme-secondary-light-purple), var(--theme-light-purple), var(--theme-dark-pink), var(--theme-light-pink));
     background-size: 2000%;
@@ -81,163 +81,40 @@
   }
   
   
-  .hero h1 {
+  .hero__title {
     font-size: 4rem;
     line-height: 5.5rem;
     letter-spacing: -0.3rem;
     margin-bottom: 2rem;
   }
   
-  .hero a {
+  .contact__CTA {
     color: var(--theme-dark-white);
     letter-spacing: 0.3rem;
     text-decoration: none;
   }
   
   @media (max-width: 480px) {
-    .hero {
+    #hero {
       height: 30em;
     }
-    .hero h1 {
+    .hero__title {
       margin-bottom: 0rem;
   
     line-height: 4rem;
     }
-    #greeting {
+    .hero__greeting {
       font-size: 1em;
     }
-    #name {
+    .hero__name {
       font-size: 1em;
     }
-    .slider {
+    .hero__slider {
       margin-top: 5rem;
       font-size: 0.5em;
       letter-spacing: 0.1rem;
       line-height: 2.2rem;
     }
   }
-  
-  .contact-info {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-    margin-left: -0.5rem;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .contact-points {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .moved {
-    animation: 1s slide-left forwards;
-  }
-  
-  .email {
-    margin-left: 0.3rem;
-    cursor: pointer;
-    
-  }
-  
-  .show-email {
-    margin-left: 0rem;
-    margin-top: -2.15rem;
-    padding: 0.2rem;
-    display: block;
-    cursor: text;
-    position: absolute;
-    animation: 1s appear forwards;
-    border: 1px solid var(--theme-secondary-black);
-    border-radius: 4px;
-  }
-  
-  @keyframes slide-left {
-    to {
-      transform: translateX(-600%);
-    }
-  }
-  
-  @keyframes slide-right {
-    to {
-      transform: translateX(0%);
-    }
-  }
-  
-  @keyframes appear {
-    0% {
-      display: none;
-      transform:translateX(100%);
-    }
-    100% {
-      display: block;
-      transform:translateX(-50%);
-    }
-  }
-  
-  .show-email:hover {
-    color: var(--theme-secondary-dark-white);
-  }
-  
-  .hide-email {
-    animation: 1s slide-right forwards;
-    display: none;
-  }
-  
-  .show-hint {
-    color: var(--theme-hint-black);
-    display: flex;
-    align-self: flex-end;
-  }
-  
-  .hide-hint {
-    color: transparent;
-  }
-  
-  @media (max-width: 480px) {
-    .contact-info {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-flow: column;
-      margin-top: -4rem;
-      margin-left: -0.5rem;
-      overflow: hidden;
-      position: relative;
-    }
-    .contact-info-landing {
-      display: none;
-    }
-  
-    @keyframes slide-left {
-      to {
-        transform: translateX(-300%);
-      }
-    }
-    @keyframes appear {
-      0% {
-        display: none;
-        transform:translateX(100%);
-      }
-      100% {
-        display: block;
-        transform:translateX(5%);
-      }
-    }
-    .contact-points {
-      margin-top: 1rem;
-    }
-  }
-  
-  .scroll-down {
-    display: none;
-    transform: rotate(90deg);
-    color: var(--theme-hint-black);
-    align-self: flex-start;
-  }
-  
+
   /* Hero Section */
