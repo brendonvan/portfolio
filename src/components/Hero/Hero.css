@@ -3,11 +3,12 @@
 #hero {
     width: 100vw;
     height: 100vh;
+    padding-top: 14rem;
     font-family: "Mark Pro Bold", sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: column;
 }
 
@@ -74,6 +75,10 @@
     color: var(--theme-dark-white);
     letter-spacing: 0.3rem;
     text-decoration: none;
+}
+
+.hero__banner {
+    width: 100%;
 }
 
 @keyframes slide {

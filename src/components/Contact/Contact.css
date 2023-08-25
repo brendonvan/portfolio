@@ -19,7 +19,6 @@
 .email {
     margin-left: 0.3rem;
     cursor: pointer;
-
 }
 
 .show-email {
@@ -33,6 +32,44 @@
     border: 1px solid var(--theme-secondary-black);
     border-radius: 4px;
 }
+
+.show-email:hover {
+    color: var(--theme-secondary-dark-white);
+}
+
+.hide-email {
+    animation: 1s slide-right forwards;
+    display: none;
+}
+
+.show-hint {
+    color: var(--theme-hint-black);
+    display: flex;
+    align-self: center;
+}
+
+.hide-hint {
+    color: transparent;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-landing {
+    display: none;
+}
+
+.contact__points {
+    margin-top: 1rem;
+}
+
 
 @keyframes slide-left {
     to {
@@ -58,61 +95,20 @@
     }
 }
 
-.show-email:hover {
-    color: var(--theme-secondary-dark-white);
-}
-
-.hide-email {
-    animation: 1s slide-right forwards;
-    display: none;
-}
-
-.show-hint {
-    color: var(--theme-hint-black);
-    display: flex;
-    align-self: flex-end;
-}
-
-.hide-hint {
-    color: transparent;
-}
-
-@media (max-width: 480px) {
-    .contact {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-flow: column;
-        margin-top: -4rem;
-        margin-left: -0.5rem;
-        overflow: hidden;
-        position: relative;
+@keyframes slide-left {
+    to {
+        transform: translateX(-300%);
     }
+}
 
-    .contact-landing {
+@keyframes appear {
+    0% {
         display: none;
+        transform: translateX(100%);
     }
 
-    @keyframes slide-left {
-        to {
-            transform: translateX(-300%);
-        }
-    }
-
-    @keyframes appear {
-        0% {
-            display: none;
-            transform: translateX(100%);
-        }
-
-        100% {
-            display: block;
-            transform: translateX(5%);
-        }
-    }
-
-    .contact__points {
-        margin-top: 1rem;
+    100% {
+        display: block;
+        transform: translateX(5%);
     }
 }

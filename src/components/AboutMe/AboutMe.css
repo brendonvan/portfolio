@@ -1,6 +1,4 @@
 #about-me {
-  width: 80%;
-  height: auto;
   margin: 8rem 0;
   font-family: 'Mark Pro Bold', sans-serif;
   font-size: 3rem;
@@ -11,15 +9,16 @@
   flex-flow: column;
 }
 
-.about-me h2 {
-  margin-bottom: 4rem;
-  font-size: 5.5rem;
+.about-me__title {
+  margin-bottom: 2rem;
+  font-size: 4rem;
   line-height: 5.5rem;
   letter-spacing: -0.2rem;
   text-align: center;
 }
 
 .about-me__desc {
+  width: 80%;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -82,20 +81,14 @@
 .about-me__box1,
 .about-me__box2,
 .about-me__box3 {
-  padding-bottom: 4rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border: 2px solid var(--theme-secondary-light-white);
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-flow: column;
   text-align: center;
-}
-
-
-.about-me__box1 h4,
-.about-me__box2 h4,
-.about-me__box3 h4 {
-  margin-top: 2rem;
-
 }
 
 .about-me__box1 h4 span:first-child {
@@ -113,7 +106,7 @@
 .about-me__box1 p,
 .about-me__box2 p,
 .about-me__box3 p {
-  width: 16rem;
+  width: 80%;
   margin-top: 2rem;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;

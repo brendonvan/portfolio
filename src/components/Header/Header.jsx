@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 const Header = () => {
     const [scrollDirection, setScrollDirection] = useState(true);
     useEffect(() => {
-      let lastScrollY = window.pageYOffset;
+      let lastScrollY = window.scrollY;
   
       const updateScrollDirection = () => {
-        const scrollY = window.pageYOffset;
+        const scrollY = window.scrollY;
         const direction = scrollY > lastScrollY ? false : true ;
         if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
           setScrollDirection(direction);
@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <header>
             <div className={ scrollDirection ? 'header__container' : 'header__container hide-nav' }>
-                <div className='header__left'><img src="http://brendonvan.github.io/portfolio/icons/BVFilm-source.svg" alt="logo" /></div>
+                <div className='header__left'><img src="./icons/bv-signature.png" alt="logo" /></div>
                 <div className='header__right'>
                     <a href='#home'>Home</a>
                     <a href='#about-me'>About Me</a>
