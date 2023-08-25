@@ -1,0 +1,54 @@
+import './Project.css';
+
+const Project = () => {
+    return (
+        <section id='projects' className='projects'>
+          <div className='project-header'>
+            <h1>My Work</h1>
+          </div>
+          <div className='project-portfolio'>
+            <div className='project-card featured stacked'>
+              <a href='https://tesla-reimagined.vercel.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/tesla.png" alt="tesla-project" /></a>
+              <div className='project-card-content'>
+                <h2>Tesla Reimagined</h2>
+                <span><p>Tesla Clone but with UI/UX inspired by Nickelfox & Kushanthi Hasinika. CRUD funcationality for user authentication and cultivating car designs using Spring Boot.</p></span><a href='https://github.com/brendonvan/Tesla-Reimagined/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E' alt='javascript'></img>
+                <img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' alt='html'></img>
+                <img src='https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' alt='css'></img>
+                <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='react'></img>
+                <img src='https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white' alt='redux'></img>
+                <img src='https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white' alt='three.js'></img>
+                <img src='https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white' alt='java'></img>
+                <img src='https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white' alt='spring'></img>
+                <img src='https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white' alt='sql'></img>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <a href='https://netflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/netflix.png" alt="netflix-project" /></a>
+              <div className='project-card-content'>
+                <h2>Netflix Reimagined</h2>
+                <span><p>Netflix Clone but with UI/UX inspired by Jurre Houtkamp & Serge Strokov. CRUD funcationality for user authentication and cultivating watchlists. </p></span><a href='https://github.com/brendonvan/Netflix-Reimagined/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                
+                <img src='https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white' alt='mongodb'></img>
+                <img src='https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB' alt='express'></img>
+                <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='react'></img>
+                <img src='https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white' alt='redux'></img>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <a href='https://brendonvan.github.io/2048-clone/' target="_blank" rel="noopener noreferrer"><img src="./projects/2048.png" alt="2048-project" /></a>
+              <div className='project-card-content'>
+                <h2>2048 Clone</h2>
+                <span><p>The objective of the game is to slide numbered tiles on a grid to combine them to create a tile with the number 2048.</p></span><a href='https://github.com/brendonvan/2048-clone/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E' alt='javascript'></img>
+                <img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' alt='html'></img>
+                <img src='https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' alt='css'></img>
+                <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='node'></img>
+              </div>
+            </div>
+          </div>
+        </section>
+    );
+}
+
+export default Project;

@@ -1,0 +1,93 @@
+
+/* About Me Section */
+
+.about-me {
+    font-family: Mark Pro Bold, sans-serif;
+    width: 80%;
+    height: auto;
+    padding-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    font-size: 3rem;
+    color: var(--theme-secondary-light-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  
+  .about-me h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  
+  .about-me-desc {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .about-me-boxes {
+    width: 70rem;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .about-me-desc {
+      font-size: 0.7em;
+    }
+    .about-me-boxes {
+      width: 100vw;
+      height: auto;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .about-me h1 {
+      font-size: 1em;
+      margin-top: 2em;
+    }
+  }
+  
+  .about-me-box1, .about-me-box2, .about-me-box3 {
+    border: 2px solid var(--theme-secondary-light-white);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 4rem;
+  }
+  
+  
+  .about-me-box1 h6, .about-me-box2 h6, .about-me-box3 h6 {
+    margin-top: 2rem;
+  
+  }
+  
+  .about-me-box1 h6 span:first-child {
+    background: linear-gradient(to top, rgb(223, 4, 141) 30%, transparent 30%);
+  }
+  
+  .about-me-box2 h6 span:first-child {
+    background: linear-gradient(to top, rgb(45, 73, 216) 30%, transparent 30%);
+  }
+  
+  .about-me-box3 h6 span:first-child {
+    background: linear-gradient(to top, rgb(255, 106, 43) 30%, transparent 30%);
+  }
+  
+  .about-me-box1 p, .about-me-box2 p, .about-me-box3 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    width: 16rem;
+  }
+  
+  /* About Me Section */

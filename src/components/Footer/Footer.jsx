@@ -3,18 +3,17 @@ import { useState, useEffect } from 'react';
 
 const Footer = () => {
     let [showEmail, setShowEmail] = useState(false);
-    function toggleEmail() {
-        console.log(showEmail)
+    const toggleEmail =() => {
         if (!showEmail) {
             navigator.clipboard.writeText('brendon@van.digital');
             setShowEmail(true);
-            
         } else {
             setShowEmail(false);
         }
     }
+
     return (
-        <footer className="footer">
+        <footer id='contact' className="footer">
             <div className='contact-me'>
                 <h1>Contact Me</h1>
                 <p>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
