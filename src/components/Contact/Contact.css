@@ -1,3 +1,9 @@
+.contact {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
 .contact__info {
     margin-top: 5rem;
     display: flex;
@@ -46,14 +52,6 @@
 
 .hide-hint {
     color: transparent;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: column;
-    position: relative;
 }
 
 .contact-landing {

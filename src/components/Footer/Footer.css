@@ -1,6 +1,4 @@
 footer {
-    width: 100%;
-    height: 100%;
     background-color: var(--theme-secondary-black-translucent);
     display: flex;
     flex-flow: column wrap;
@@ -9,7 +7,6 @@ footer {
 footer .contact__me .contact .contact__info {
     margin-top: 5rem;
     display: flex;
-    justify-content: flex-end;
 }
 
 footer .contact__me .contact .show-email {
@@ -78,7 +75,15 @@ footer .contact__me .contact .show-email {
 
 /* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
-
+    #contact {
+        flex-flow: row;
+    }
+    .contact__me {
+        width: 50%;
+    }
+    .testimonials {
+        width: 50%;
+    }
 }
 
 

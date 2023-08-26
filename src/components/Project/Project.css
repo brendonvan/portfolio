@@ -57,6 +57,36 @@
 
 /* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
+  .project__portfolio {
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 4rem;
+  }
+
+  .project__card.featured {
+    width: 60rem;
+  }
+
+  .project__card {
+    width: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .project__card.featured > a > img  {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project__card > a > img  {
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .project__card-container {
+    height: 20rem;
+  }
 
 }
 
