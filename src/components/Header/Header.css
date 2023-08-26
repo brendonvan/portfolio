@@ -27,9 +27,6 @@ header {
     transform: translateY(-400px);
 }
 
-.header__left {
-}
-
 .header__left img {
     width: 10rem;
 }
@@ -69,10 +66,14 @@ header {
 
 /* Desktop */
 @media only screen and (min-width: 1440px) {
-
+    .header__right a {
+        font-size: 1.5rem;
+    }
 }
 
 /* Max Desktop */
 @media only screen and (min-width: 1920px) {
-    
+    .header__right a {
+        font-size: 24px;
+    }
 }

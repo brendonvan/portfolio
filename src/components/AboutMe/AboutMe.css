@@ -70,7 +70,6 @@
   animation: animate 7s linear infinite;
 }
 
-
 .about-me__boxes {
   margin-bottom: 4rem;
   display: flex;
@@ -164,10 +163,63 @@
 
 /* Desktop */
 @media only screen and (min-width: 1440px) {
+  .about-me__title {
+    margin-bottom: 4rem;
+    font-size: 6rem;
+  }
 
+  .about-me__desc {
+    margin-bottom: 6rem;
+    font-size: 2.5rem;
+  }
+
+  .about-me__box1,
+  .about-me__box2,
+  .about-me__box3 {
+    width: 26rem;
+    padding: 1.6rem;
+  }
+
+  .about-me__box1 h4,
+  .about-me__box2 h4,
+  .about-me__box3 h4 {
+    font-size: 3rem;
+  }
+
+  .about-me__box1 p,
+  .about-me__box2 p,
+  .about-me__box3 p {
+    font-size: 1.4rem;
+  }
 }
-
 /* Max Desktop */
 @media only screen and (min-width: 1920px) {
-    
+  .about-me__title {
+    margin-bottom: 64px;
+    font-size: 96px;
+  }
+
+  .about-me__desc {
+    margin-bottom: 96px;
+    font-size: 40px;
+  }
+
+  .about-me__box1,
+  .about-me__box2,
+  .about-me__box3 {
+    width: 416px;
+    padding: 25.6px;
+  }
+
+  .about-me__box1 h4,
+  .about-me__box2 h4,
+  .about-me__box3 h4 {
+    font-size: 48px;
+  }
+
+  .about-me__box1 p,
+  .about-me__box2 p,
+  .about-me__box3 p {
+    font-size: 22.4px;
+  }
 }

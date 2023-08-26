@@ -17,27 +17,27 @@
 
 .hero__name {
     font-size: 2em;
-    background: 
+    background:
         linear-gradient(-45deg,
-        var(--theme-light-pink),
-        var(--theme-dark-pink),
-        var(--theme-light-purple),
-        var(--theme-secondary-light-purple),
-        var(--theme-dark-purple),
-        var(--theme-secondary-dark-purple),
-        var(--theme-dark-blue),
-        var(--theme-secondary-dark-blue),
-        var(--theme-light-blue),
-        var(--theme-secondary-light-blue),
-        var(--theme-light-blue),
-        var(--theme-secondary-dark-blue),
-        var(--theme-dark-blue),
-        var(--theme-secondary-dark-purple),
-        var(--theme-dark-purple),
-        var(--theme-secondary-light-purple),
-        var(--theme-light-purple),
-        var(--theme-dark-pink),
-        var(--theme-light-pink));
+            var(--theme-light-pink),
+            var(--theme-dark-pink),
+            var(--theme-light-purple),
+            var(--theme-secondary-light-purple),
+            var(--theme-dark-purple),
+            var(--theme-secondary-dark-purple),
+            var(--theme-dark-blue),
+            var(--theme-secondary-dark-blue),
+            var(--theme-light-blue),
+            var(--theme-secondary-light-blue),
+            var(--theme-light-blue),
+            var(--theme-secondary-dark-blue),
+            var(--theme-dark-blue),
+            var(--theme-secondary-dark-purple),
+            var(--theme-dark-purple),
+            var(--theme-secondary-light-purple),
+            var(--theme-light-purple),
+            var(--theme-dark-pink),
+            var(--theme-light-pink));
     background-size: 2000%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -75,7 +75,7 @@
 }
 
 .hero__banner {
-    width: 100%; 
+    width: 100%;
     position: absolute;
     bottom: 0;
 }
@@ -144,17 +144,21 @@
     .hero__title {
         width: 38rem;
     }
+
     .hero__slider div {
         font-size: 3rem;
     }
+
     .hero__banner {
         bottom: 2rem;
         display: flex;
         justify-content: space-around;
     }
+
     .hero__cta {
         text-wrap: nowrap;
     }
+
     .hero__banner .contact .show-email {
         margin-top: 0;
     }
@@ -163,10 +167,51 @@
 
 /* Desktop */
 @media only screen and (min-width: 1440px) {
+    .hero__title {
+        width: 50rem;
+        font-size: 4rem;
+        line-height: 5rem;
+        letter-spacing: 0;
+    }
 
+    .hero__slider {
+        width: 51rem;
+    }
+
+    .hero__slider div {
+        font-size: 4rem;
+    }
+
+    .hero__cta {
+        font-size: 1.2rem;
+    }
+
+    .hero__banner .contact .show-email {
+        margin-left: -9rem;
+    }
 }
 
 /* Max Desktop */
 @media only screen and (min-width: 1920px) {
-    
+    .hero__title {
+        width: 800px;
+        font-size: 64px;
+        line-height: 80px;
+    }
+
+    .hero__slider {
+        width: 816px;
+    }
+
+    .hero__slider div {
+        font-size: 64px;
+    }
+
+    .hero__cta {
+        font-size: 19.2px;
+    }
+
+    .hero__banner .contact .show-email {
+        margin-left: -192px;
+    }
 }

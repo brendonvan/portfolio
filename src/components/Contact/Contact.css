@@ -123,10 +123,26 @@
 
 /* Desktop */
 @media only screen and (min-width: 1440px) {
-
+    .contact__points img {
+        width: 3rem;
+    }
+    .contact__info p {
+        font-size: 1.8rem;
+    }
+    .show-hint {
+        font-size: 1.2rem;
+    }
 }
 
 /* Max Desktop */
 @media only screen and (min-width: 1920px) {
-    
+    .contact__points img {
+        width: 64px;
+    }
+    .contact__info p {
+        font-size: 32px;
+    }
+    .show-hint {
+        font-size: 24px;
+    }
 }
