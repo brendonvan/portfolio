@@ -82,11 +82,8 @@
 .about-me__box3 {
   width: 100%;
   aspect-ratio: 1 / 1;
+  padding: 1rem;
   border: 2px solid var(--theme-secondary-light-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
   text-align: center;
 }
 
@@ -102,12 +99,75 @@
   background: linear-gradient(to top, rgb(255, 106, 43) 30%, transparent 30%);
 }
 
+.about-me__box1 h4,
+.about-me__box2 h4,
+.about-me__box3 h4 {
+  margin: auto;
+}
+
 .about-me__box1 p,
 .about-me__box2 p,
 .about-me__box3 p {
-  width: 80%;
-  margin-top: 2rem;
+  margin: auto;
+  margin-top: 1rem;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+  .about-me__boxes {
+    flex-flow: row;
+  }
+
+  .about-me__box1,
+  .about-me__box2,
+  .about-me__box3 {
+    width: 16rem;
+  }
+
+  .about-me__box1 h4,
+  .about-me__box2 h4,
+  .about-me__box3 h4 {
+    font-size: 1.8rem;
+  }
+
+  .about-me__box1 p,
+  .about-me__box2 p,
+  .about-me__box3 p {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 1024px) {
+  .about-me__box1,
+  .about-me__box2,
+  .about-me__box3 {
+    width: 20rem;
+    padding: 1.6rem;
+  }
+
+  .about-me__box1 h4,
+  .about-me__box2 h4,
+  .about-me__box3 h4 {
+    font-size: 2.2rem;
+  }
+
+  .about-me__box1 p,
+  .about-me__box2 p,
+  .about-me__box3 p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* Max Desktop */
+@media only screen and (min-width: 1920px) {
+    
 }

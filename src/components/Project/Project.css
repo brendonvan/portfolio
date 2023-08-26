@@ -48,3 +48,25 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+    
+}
+
+
+/* Tablet Landscape */
+@media only screen and (min-width: 1024px) {
+
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* Max Desktop */
+@media only screen and (min-width: 1920px) {
+    
+}

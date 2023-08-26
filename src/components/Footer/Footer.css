@@ -6,6 +6,17 @@ footer {
     flex-flow: column wrap;
 }
 
+footer .contact__me .contact .contact__info {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .contact__me .contact .show-email {
+    margin-top: 0;
+    margin-left: -6rem;
+}
+
 .contact__me {
     width: 100%;
     padding: 2rem;
@@ -20,17 +31,6 @@ footer {
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: -2rem;
-}
-
-.contact__info {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer .contact__me .contact .show-email {
-    margin-top: 0.85rem;
-    margin-left: -6rem;
 }
 
 .testimonials {
@@ -68,4 +68,26 @@ footer .contact__me .contact .show-email {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+    
+}
+
+
+/* Tablet Landscape */
+@media only screen and (min-width: 1024px) {
+
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* Max Desktop */
+@media only screen and (min-width: 1920px) {
+    
 }

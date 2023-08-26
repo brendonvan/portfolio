@@ -1,9 +1,7 @@
-.contact {
-    width: 100%;
+.contact__info {
+    margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
 .contact__points {
@@ -22,8 +20,6 @@
 }
 
 .show-email {
-    margin-left: 0rem;
-    margin-top: -2.15rem;
     padding: 0.2rem;
     display: block;
     cursor: text;
@@ -53,12 +49,10 @@
 }
 
 .contact {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-flow: column;
-    overflow: hidden;
     position: relative;
 }
 
@@ -69,7 +63,6 @@
 .contact__points {
     margin-top: 1rem;
 }
-
 
 @keyframes slide-left {
     to {
@@ -111,4 +104,31 @@
         display: block;
         transform: translateX(5%);
     }
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+    
+}
+
+
+/* Tablet Landscape */
+@media only screen and (min-width: 1024px) {
+    .contact__info {
+        margin-top: 0;
+    }
+    .contact__points {
+        margin-top: 0;
+    }
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* Max Desktop */
+@media only screen and (min-width: 1920px) {
+    
 }
