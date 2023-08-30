@@ -8,7 +8,7 @@ const Project = () => {
           </div>
           <div className='project__portfolio'>
             <div className='project__card featured stacked'>
-              <a href='https://tesla-reimagined.vercel.app/' target="_blank" rel="noopener noreferrer">
+              <a className='project__card-img' href='https://tesla-reimagined.vercel.app/' target="_blank" rel="noopener noreferrer">
                 <img src="./projects/tesla.png" alt="tesla-project" />
               </a>
               <div className='project__card-container'>
@@ -31,7 +31,7 @@ const Project = () => {
               </div>
             </div>
             <div className='project__card stacked'>
-              <a href='https://netflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer">
+              <a className='project__card-img' href='https://netflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer">
                 <img src="./projects/netflix.png" alt="netflix-project" />
               </a>
               <div className='project__card-container'>
@@ -53,7 +53,7 @@ const Project = () => {
               </div>
             </div>
             <div className='project__card stacked'>
-              <a href='https://brendonvan.github.io/2048-clone/' target="_blank" rel="noopener noreferrer">
+              <a className='project__card-img' href='https://brendonvan.github.io/2048-clone/' target="_blank" rel="noopener noreferrer">
                 <img src="./projects/2048.png" alt="2048-project" />
               </a>
               <div className='project__card-container'>

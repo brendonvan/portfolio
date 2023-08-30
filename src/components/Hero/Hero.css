@@ -85,46 +85,6 @@
     margin-left: -6rem;
 }
 
-@keyframes slide {
-    0% {
-        margin-top: -37.5rem;
-    }
-
-    5% {
-        margin-top: -22.75rem;
-    }
-
-    33% {
-        margin-top: -22.75rem;
-    }
-
-    38% {
-        margin-top: -11.25rem;
-    }
-
-    66% {
-        margin-top: -11.25rem;
-    }
-
-    71% {
-        margin-top: 0.25rem;
-    }
-
-    100% {
-        margin-top: 0.25rem;
-    }
-}
-
-@keyframes animate {
-    0% {
-        background-position: 0%;
-    }
-
-    100% {
-        background-position: 100%;
-    }
-}
-
 /* Tablet Portrait */
 @media only screen and (min-width: 768px) {
     .hero__title {

@@ -59,14 +59,22 @@ picture {
 
 /* Inherit fonts for inputs and buttons */
 input,
-button,
 textarea,
 select {
   font: inherit;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   html:focus-within {
    scroll-behavior: auto;
   }
@@ -79,7 +87,7 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 :root {
   --theme-black: #0b090a;
@@ -118,3 +126,43 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--theme-secondary-light-white);
 }
 
+
+@keyframes slide {
+  0% {
+      margin-top: -37.5rem;
+  }
+
+  5% {
+      margin-top: -22.75rem;
+  }
+
+  33% {
+      margin-top: -22.75rem;
+  }
+
+  38% {
+      margin-top: -11.25rem;
+  }
+
+  66% {
+      margin-top: -11.25rem;
+  }
+
+  71% {
+      margin-top: 0.25rem;
+  }
+
+  100% {
+      margin-top: 0.25rem;
+  }
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0%;
+  }
+
+  100% {
+      background-position: 100%;
+  }
+}
