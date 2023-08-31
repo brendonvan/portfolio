@@ -119,6 +119,10 @@ button, input[type="submit"], input[type="reset"] {
 /* CSS Reset End */
 
 html {
+  background-color: var(--theme-secondary-white);
+}
+
+.App.dark-mode {
   background-color: var(--theme-black);
 }
 
@@ -165,4 +169,12 @@ h1, h2, h3, h4, h5, h6, p {
   100% {
       background-position: 100%;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@media (prefers-color-scheme: light) {
+
 }

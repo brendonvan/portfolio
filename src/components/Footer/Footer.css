@@ -1,7 +1,11 @@
 footer {
-    background-color: var(--theme-secondary-black-translucent);
+    background-color: var(--theme-light-white);
     display: flex;
     flex-flow: column wrap;
+}
+
+.footer.dark-mode {
+    background-color: var(--theme-secondary-black);
 }
 
 footer .contact__me .contact .contact__info {
@@ -19,15 +23,26 @@ footer .contact__me .contact .show-email {
     padding: 2rem 3rem;
 }
 
+
 .contact__me-title {
     font-size: 3rem;
+    color: var(--theme-black);
+}
+
+.footer.dark-mode .contact__me .contact__me-title {
+    color: var(--theme-secondary-light-white);
 }
 
 .contact__me-subtitle {
-    font-size: 1.3rem;
-    font-weight: 500;
     margin-top: 1rem;
     margin-bottom: -2rem;
+    color: var(--theme-black);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer.dark-mode .contact__me .contact__me-subtitle {
+    color: var(--theme-secondary-light-white);
 }
 
 .testimonials {

@@ -1,5 +1,5 @@
 #hero {
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     font-family: "Mark Pro Bold", sans-serif;
     text-align: center;
@@ -7,12 +7,25 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    gap: 2rem;
 }
 
 .hero__title {
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0rem;
+}
+
+.hero__greeting {
+    font-size: 2em;
+}
+
+.hero .hero__title .hero__greeting {
+    color: var(--theme-black);
+}
+
+.hero.dark-mode .hero__title .hero__greeting {
+    color: var(--theme-secondary-light-white);
 }
 
 .hero__name {
@@ -44,9 +57,6 @@
     animation: animate 7s linear infinite;
 }
 
-.hero__greeting {
-    font-size: 2em;
-}
 
 .hero__slider {
     width: 100%;
@@ -60,24 +70,41 @@
     height: 5.5rem;
     margin-bottom: 6rem;
     font-size: 1.5rem;
-    color: #fff;
     text-align: center;
 }
+
+.hero .hero__title .hero__slider {
+    color: var(--theme-black);
+}
+
+.hero.dark-mode .hero__title .hero__slider {
+    color: var(--theme-secondary-light-white);
+}
+
 
 .hero__slider-text1 {
     animation: slide 5s linear infinite;
 }
 
-.hero__cta {
-    color: var(--theme-dark-white);
-    letter-spacing: 0.3rem;
-    text-decoration: none;
+.hero button {
+    
+    color: var(--theme-black);
+}
+
+.hero.dark-mode button {
+    color: var(--theme-secondary-light-white);
 }
 
 .hero__banner {
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+.hero__cta {
+    color: var(--theme-dark-white);
+    letter-spacing: 0.3rem;
+    text-decoration: none;
 }
 
 .hero__banner .contact .show-email {

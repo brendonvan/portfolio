@@ -17,11 +17,27 @@
   text-align: center;
 }
 
+.about-me .about-me__title {
+  color: var(--theme-black);
+}
+
+.about-me.dark-mode .about-me__title {
+  color: var(--theme-secondary-light-white);
+}
+
 .about-me__desc {
   width: 80%;
   margin-bottom: 4rem;
   font-size: 2rem;
   text-align: center;
+}
+
+.about-me .about-me__desc {
+  color: var(--theme-black);
+}
+
+.about-me.dark-mode .about-me__desc {
+  color: var(--theme-secondary-light-white);
 }
 
 .about-me__deadlines {
@@ -76,6 +92,18 @@
   flex-flow: column;
 }
 
+.about-me .about-me__box1,
+.about-me .about-me__box2,
+.about-me .about-me__box3 {
+  border: 2px solid var(--theme-black);
+}
+
+.about-me.dark-mode .about-me__box1,
+.about-me.dark-mode .about-me__box2,
+.about-me.dark-mode .about-me__box3 {
+  border: 2px solid var(--theme-secondary-light-white);
+}
+
 .about-me__box1,
 .about-me__box2,
 .about-me__box3 {
@@ -104,6 +132,18 @@
   margin: auto;
 }
 
+.about-me__box1 h4,
+.about-me__box2 h4,
+.about-me__box3 h4 {
+  color: var(--theme-black);
+}
+
+.about-me.dark-mode .about-me__box1 h4,
+.about-me.dark-mode .about-me__box2 h4,
+.about-me.dark-mode .about-me__box3 h4 {
+  color: var(--theme-secondary-light-white);
+}
+
 .about-me__box1 p,
 .about-me__box2 p,
 .about-me__box3 p {
@@ -112,6 +152,18 @@
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.about-me__box1 p,
+.about-me__box2 p,
+.about-me__box3 p {
+  color: var(--theme-black);
+}
+
+.about-me.dark-mode .about-me__box1 p,
+.about-me.dark-mode .about-me__box2 p,
+.about-me.dark-mode .about-me__box3 p {
+  color: var(--theme-secondary-light-white);
 }
 
 /* Tablet Portrait */
