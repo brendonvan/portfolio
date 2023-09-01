@@ -7,7 +7,7 @@ const AboutMe = () => {
   const theme = useSelector((state) => state.theme);
 
   return (
-    <section id='about-me' className={theme.isDarkMode ? 'about-me dark-mode' : 'about-me'}>
+    <section id='about-me' className={theme.isDarkMode ? 'about-me dark-mode hidden' : 'about-me hidden'}>
       <h2 className='about-me__title'>About Me</h2>
       <h3 className='about-me__desc'>
         <span>I'm used to </span>

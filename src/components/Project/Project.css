@@ -1,5 +1,8 @@
 #projects {
   padding: 4rem 0;
+  opacity: 1;
+  transform: translateY(-2rem);
+  transition: all 1s ease-in 0.5s;
 }
 
 .project__header {
@@ -7,9 +10,14 @@
 }
 
 .project__header h2 {
+  color: var(--theme-secondary-black);
   font-size: 4rem;
   line-height: 4rem;
   text-align: center;
+}
+
+.project.dark-mode .project__header h2 {
+  color: var(--theme-secondary-light-white);
 }
 
 .project__portfolio {
