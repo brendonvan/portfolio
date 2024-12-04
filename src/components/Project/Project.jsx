@@ -36,7 +36,7 @@ const Project = () => {
           </div>
         </div>
         <div className='project__card stacked'>
-          <a className='project__card-img' href='https://netflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer">
+          <a className='project__card-img' href='https://neflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer">
             <img src="./projects/netflix.png" alt="netflix-project" />
           </a>
           <div className='project__card-container'>
