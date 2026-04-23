@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='testimonials'>
                 <div className='testimonial__image'>
                     <img src="./icons/quotes.svg" alt="quotes" />
-                    <img src="./icons/ericfithian.jpeg" alt="ericfithian" />
+                    <img src="./icons/ericfithian.jpeg" alt="Eric Fithian, Lead Instructor at General Assembly" />
                 </div>
                 <p className='testimonial__quote'>His ability to be a leader who helps others he's around will also improve
                     the culture of any company that is lucky enough to hire him the same way it

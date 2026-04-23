@@ -13,6 +13,7 @@ const Project = () => {
       </div>
       <div className='project__portfolio'>
         <div className='project__card featured stacked'>
+          <span className='project__featured-badge'>Featured</span>
           <a className='project__card-img' href='https://tesla-reimagined.vercel.app/' target="_blank" rel="noopener noreferrer">
             <img src="./projects/tesla.png" alt="tesla-project" />
           </a>

@@ -2,6 +2,7 @@ header {
     width: 100vw;
     height: 7em;
     position: fixed;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,6 @@ header {
     align-items: center;
     justify-content: space-between;
     backdrop-filter: blur(1rem);
-    z-index: 2147483638;
     transition-timing-function: ease-in;
     transition: 0.5s;
 }
