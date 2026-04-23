@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 const Contact = () => {
     const theme = useSelector((state) => state.theme);
-    let [showEmail, setShowEmail] = useState(false);
+    const [showEmail, setShowEmail] = useState(false);
     const toggleEmail = () => {
         if (!showEmail) {
             navigator.clipboard.writeText('brendon@van.digital');

@@ -102,9 +102,13 @@
 }
 
 .hero__cta {
-    color: var(--theme-dark-white);
+    color: var(--theme-secondary-black);
     letter-spacing: 0.3rem;
     text-decoration: none;
+}
+
+.hero.dark-mode .hero__cta {
+    color: var(--theme-dark-white);
 }
 
 .hero__banner .contact .show-email {

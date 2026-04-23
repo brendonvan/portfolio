@@ -13,7 +13,7 @@ const AboutMe = () => {
         <span>I'm used to </span>
         <span>tight </span>
         <span className='about-me__deadlines'>deadlines</span>
-        <br></br>
+        <br />
         <span>and </span>
         <span className='about-me__challenging'>challenging </span>
         <span>tasks.</span>

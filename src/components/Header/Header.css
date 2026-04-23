@@ -29,17 +29,16 @@ header {
 
 .header__left img {
     width: 10rem;
+    filter: invert(1);
+}
+
+.dark-mode .header__left img {
+    filter: invert(0);
 }
 
 .header__right {
     display: none;
 }
-
-/* Tablet Portrait */
-@media only screen and (min-width: 768px) {
-    
-}
-
 
 /* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
@@ -49,17 +48,35 @@ header {
         align-items: center;
         justify-content: center;
     }
-    
+
     .header__right a {
         margin-right: 1.2rem;
-        color: var(--theme-secondary-light-white);
+        color: var(--theme-secondary-black);
         font-family: 'Mark Pro Bold', sans-serif;
         font-size: 1.2rem;
         text-decoration: none;
     }
-    
+
+    .dark-mode .header__right a {
+        color: var(--theme-secondary-light-white);
+    }
+
     .header__right a:hover {
+        color: var(--theme-hint-black);
+    }
+
+    .dark-mode .header__right a:hover {
         color: var(--theme-secondary-dark-white);
+    }
+
+    .header__right a:focus-visible {
+        outline: 2px solid var(--theme-secondary-black);
+        outline-offset: 3px;
+        border-radius: 2px;
+    }
+
+    .dark-mode .header__right a:focus-visible {
+        outline-color: var(--theme-secondary-light-white);
     }
 }
 
@@ -74,6 +91,6 @@ header {
 /* Max Desktop */
 @media only screen and (min-width: 1920px) {
     .header__right a {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }

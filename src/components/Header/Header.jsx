@@ -29,7 +29,7 @@ const Header = () => {
                     <a href='#about-me'>About Me</a>
                     <a href='#projects'>Projects</a>
                     <a href='#contact'>Contact</a>
-                    <a href="./Brendon_Van_Resume.docx" download rel="noopener noreferrer" target="_blank">Resume</a>
+                    <a href="./Brendon_Van_Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</a>
                 </div>
             </div>
         </header>

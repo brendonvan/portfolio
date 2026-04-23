@@ -63,10 +63,6 @@
   border-radius: 0;
 }
 
-/* Tablet Portrait */
-@media only screen and (min-width: 768px) {}
-
-
 /* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
   .project__portfolio {

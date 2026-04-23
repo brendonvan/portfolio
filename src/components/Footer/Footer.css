@@ -73,12 +73,6 @@ footer .contact__me .contact .show-email {
     font-weight: 500;
 }
 
-/* Tablet Portrait */
-@media only screen and (min-width: 768px) {
-    
-}
-
-
 /* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
     #contact {
