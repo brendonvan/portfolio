@@ -34,6 +34,10 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
+html {
+  background-color: black;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
