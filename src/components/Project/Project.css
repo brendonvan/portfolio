@@ -22,17 +22,95 @@
 }
 
 /* ── Hero carousel ── */
-.project__carousel {
-  --swiper-navigation-color: #fff;
-  --swiper-navigation-size: 1.5rem;
+.project__carousel-wrap {
+  position: relative;
   width: 100%;
+}
+
+.project__carousel {
+  width: 100%;
+}
+
+.project__nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.project__nav-btn:hover { opacity: 1; }
+
+.project__nav-btn svg {
+  width: 14px;
+  height: 22px;
+}
+
+.project__nav-btn--prev { left: 10px; }
+.project__nav-btn--next { right: 10px; }
+
+.project__nav-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.project__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+  position: relative;
 }
 
 .project__pagination {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+}
+
+.project__play-btn {
+  position: absolute;
+  right: 1.5rem;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.project__play-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+.project__play-btn:hover {
+  color: #fff;
+}
+
+.project__play-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .project__pagination-bullet {
@@ -51,16 +129,9 @@
   transform: scale(1.25);
 }
 
-.project__carousel .swiper-button-prev,
-.project__carousel .swiper-button-next {
-  display: none; /* hidden on mobile — swipe handles it */
-}
-
-.project__carousel .swiper-button-prev:focus-visible,
-.project__carousel .swiper-button-next:focus-visible {
+.project__pagination-bullet:focus-visible {
   outline: 3px solid #fff;
-  outline-offset: 4px;
-  border-radius: 4px;
+  outline-offset: 3px;
 }
 
 .project__carousel .swiper-pagination-bullet {
@@ -85,10 +156,14 @@
   height: 100%;
 }
 
-.project__card-img img {
+.project__card-img img,
+.project__thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .project__card-img:focus-visible {
@@ -133,6 +208,12 @@
   font-size: 0.8rem;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.project__card-content a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .project__card-tech {
@@ -181,9 +262,14 @@
   text-overflow: ellipsis;
 }
 
-.project__thumb--active {
+.swiper-slide-active .project__thumb {
   opacity: 1;
   box-shadow: 0 0 0 2px var(--theme-secondary-dark-blue);
+}
+
+.project__thumb:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
 }
 
 /* ── Tablet Portrait ── */
@@ -192,8 +278,7 @@
     padding: 0 2.5rem;
   }
 
-  .project__carousel .swiper-button-prev,
-  .project__carousel .swiper-button-next {
+  .project__nav-btn {
     display: flex;
   }
 
