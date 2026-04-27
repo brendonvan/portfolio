@@ -1,11 +1,12 @@
 #projects {
-  padding: 4rem 1.5rem;
+  padding: 4rem 0;
   opacity: 1;
   transform: translateY(-2rem);
   transition: all 1s ease-in 0.5s;
 }
 
 .project__header {
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
 
@@ -20,147 +21,234 @@
   color: var(--theme-secondary-light-white);
 }
 
-/* Single-column grid for mobile — switches to 2-col at tablet landscape */
-.project__portfolio {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
+/* ── Hero carousel ── */
+.project__carousel {
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-size: 1.5rem;
+  width: 100%;
 }
 
-.project__card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.75rem;
+.project__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-/* ── Featured badge ── */
-.project__featured-badge {
-  position: absolute;
-  top: 0.85rem;
-  left: 0.85rem;
-  z-index: 1;
-  padding: 0.25rem 0.7rem;
-  background: var(--theme-secondary-dark-blue);
-  color: var(--theme-secondary-light-white);
-  font-family: 'Mark Pro Bold', sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
+.project__pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project__pagination-bullet--active {
+  background: #fff;
+  transform: scale(1.25);
+}
+
+.project__carousel .swiper-button-prev,
+.project__carousel .swiper-button-next {
+  display: none; /* hidden on mobile — swipe handles it */
+}
+
+.project__carousel .swiper-button-prev:focus-visible,
+.project__carousel .swiper-button-next:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
   border-radius: 4px;
 }
 
-/* ── Images ── */
+.project__carousel .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.project__carousel .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* ── Hero card ── */
+.project__card {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: 52vh;
+}
+
+.project__card-img {
+  display: block;
+  height: 100%;
+}
+
 .project__card-img img {
   width: 100%;
-  height: 14rem;
+  height: 100%;
   object-fit: cover;
 }
 
-/* ── Card content ── */
-.project__card-container {
-  padding: 1.5rem;
-  background-color: var(--theme-secondary-black);
+.project__card-img:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -3px;
+}
+
+/* ── Text overlay ── */
+.project__card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 50%, transparent 100%);
 }
 
 .project__card-content {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .project__card-content h5 {
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
-  font-weight: 600;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
 }
 
 .project__card-content p {
-  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
   font-weight: 500;
-  color: var(--theme-secondary-dark-white);
+  margin-bottom: 0.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project__card-content a {
-  color: var(--theme-dark-white);
+  color: #fff;
+  font-size: 0.8rem;
   text-decoration: underline;
-  text-decoration-color: var(--theme-secondary-dark-white);
+  text-decoration-color: rgba(255, 255, 255, 0.5);
 }
 
 .project__card-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
 }
 
-.project__card-img:focus-visible img {
+/* ── Thumbs carousel ── */
+.project__thumbs {
+  width: 100%;
+  padding: 0.75rem 0 0 !important;
   box-sizing: border-box;
-  border: 4px solid var(--theme-secondary-dark-blue);
-  border-radius: 0;
+}
+
+.project__thumb {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+}
+
+.project__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__thumb span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project__thumb--active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--theme-secondary-dark-blue);
 }
 
 /* ── Tablet Portrait ── */
 @media only screen and (min-width: 768px) {
-  #projects {
-    padding: 4rem 2.5rem;
+  .project__header {
+    padding: 0 2.5rem;
   }
 
-  .project__card-img img {
-    height: 18rem;
+  .project__carousel .swiper-button-prev,
+  .project__carousel .swiper-button-next {
+    display: flex;
+  }
+
+  .project__card {
+    height: 60vh;
+  }
+
+  .project__card-overlay {
+    padding: 1.5rem;
   }
 
   .project__card-content h5 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .project__card-content p {
+    font-size: 0.95rem;
+  }
+
+  .project__thumb {
+    height: 170px;
   }
 }
 
-/* ── Tablet Landscape: 2-column grid, featured spans both columns ── */
+/* ── Tablet Landscape ── */
 @media only screen and (min-width: 1024px) {
-  #projects {
-    padding: 4rem 3rem;
+  .project__header {
+    padding: 0 3rem;
   }
 
-  .project__portfolio {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  .project__card {
+    height: 65vh;
   }
 
-  .project__card.featured {
-    grid-column: 1 / -1;
-  }
-
-  .project__card.featured .project__card-img img {
-    height: 26rem;
-  }
-
-  .project__card-img img {
-    height: 20rem;
+  .project__card-overlay {
+    padding: 2rem;
   }
 
   .project__card-content h5 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   .project__card-content p {
     font-size: 1rem;
   }
+
+  .project__thumb {
+    height: 190px;
+  }
 }
 
 /* ── Desktop ── */
 @media only screen and (min-width: 1440px) {
-  .project__portfolio {
-    gap: 2.5rem;
-  }
-
-  .project__card.featured .project__card-img img {
-    height: 34rem;
-  }
-
-  .project__card-img img {
-    height: 24rem;
-  }
-
-  .project__card-container {
-    padding: 2rem;
+  .project__card {
+    height: 70vh;
   }
 
   .project__card-content h5 {
@@ -169,22 +257,18 @@
 
   .project__card-content p,
   .project__card-content a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .project__thumb {
+    height: 210px;
   }
 }
 
 /* ── Max Desktop ── */
 @media only screen and (min-width: 1920px) {
-  .project__portfolio {
-    gap: 3rem;
-  }
-
-  .project__card.featured .project__card-img img {
-    height: 44rem;
-  }
-
-  .project__card-img img {
-    height: 30rem;
+  .project__card {
+    height: 75vh;
   }
 
   .project__card-content h5 {
@@ -193,6 +277,10 @@
 
   .project__card-content p,
   .project__card-content a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .project__thumb {
+    height: 240px;
   }
 }
