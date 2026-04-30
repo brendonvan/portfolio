@@ -126,6 +126,10 @@ html {
   background-color: var(--theme-secondary-light-white);
 }
 
+.App {
+  background-color: var(--theme-secondary-light-white);
+}
+
 .App.dark-mode {
   background-color: var(--theme-black);
 }

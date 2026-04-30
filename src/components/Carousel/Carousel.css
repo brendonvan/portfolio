@@ -26,9 +26,13 @@
 
 .carousel__header h2 {
   margin: 0;
-  color: #fff;
+  color: var(--theme-black);
   font-size: 1.75rem;
   font-weight: 700;
+}
+
+.dark-mode .carousel__header h2 {
+  color: #fff;
 }
 
 /* ─────────────────────────────────────────
@@ -271,15 +275,23 @@
   border-radius: 4px;
   border: none;
   padding: 0;
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: width 0.3s ease, background 0.3s ease;
 }
 
+.dark-mode .carousel__dot {
+  background: rgba(255, 255, 255, 0.35);
+}
+
 .carousel__dot--active {
   width: 24px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .carousel__dot--active {
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -288,9 +300,13 @@
   position: absolute;
   inset: 0;
   width: 0%;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.7);
   animation: carousel-dot-progress var(--dot-duration, 7000ms) linear forwards;
   animation-play-state: inherit;
+}
+
+.dark-mode .carousel__dot--active::after {
+  background: #fff;
 }
 
 @keyframes carousel-dot-progress {
@@ -298,8 +314,12 @@
 }
 
 .carousel__dot:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid var(--theme-black);
   outline-offset: 2px;
+}
+
+.dark-mode .carousel__dot:focus-visible {
+  outline-color: #fff;
 }
 
 /* ── Play/pause — pinned to the far right of the footer ── */
@@ -314,11 +334,15 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.2s ease;
+}
+
+.dark-mode .carousel__play-btn {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .carousel__play-btn svg {
@@ -326,12 +350,18 @@
   height: 10px;
 }
 
-.carousel__play-btn:hover { color: #fff; }
+.carousel__play-btn:hover { color: var(--theme-black); }
+
+.dark-mode .carousel__play-btn:hover { color: #fff; }
 
 .carousel__play-btn:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid var(--theme-black);
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+.dark-mode .carousel__play-btn:focus-visible {
+  outline-color: #fff;
 }
 
 /* ─────────────────────────────────────────
