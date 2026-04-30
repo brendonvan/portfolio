@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0af0a8c5.css",
+    "main.css": "/static/css/main.b7ad7b0d.css",
     "main.js": "/static/js/main.00bc7c86.js",
     "static/media/Mark-Pro-Bold.ttf": "/static/media/Mark-Pro-Bold.3aead6b932c92c4ea148.ttf",
     "index.html": "/index.html",
-    "main.0af0a8c5.css.map": "/static/css/main.0af0a8c5.css.map",
+    "main.b7ad7b0d.css.map": "/static/css/main.b7ad7b0d.css.map",
     "main.00bc7c86.js.map": "/static/js/main.00bc7c86.js.map"
   },
   "entrypoints": [
-    "static/css/main.0af0a8c5.css",
+    "static/css/main.b7ad7b0d.css",
     "static/js/main.00bc7c86.js"
   ]
 }
